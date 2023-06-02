@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.raywenderlich.android.majesticreader"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+12        android:name="com.raywenderlich.android.majesticreader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.raywenderlich.android.majesticreader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:4:3-27:17
+18        android:name="com.raywenderlich.android.majesticreader.framework.MajesticReaderApplication"
+18-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:8:7-58
+19        android:allowBackup="false"
+19-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:5:7-34
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.10.1] /home/gautam/.gradle/caches/transforms-3/ac3519de685ab19412fdcf2585041428/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:6:7-41
+24        android:label="@string/app_name"
+24-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:7:7-39
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:9:7-52
+26        android:supportsRtl="true"
+26-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:10:7-33
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:11:7-38
+29        <activity
+29-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:12:5-16:16
+30            android:name="com.raywenderlich.android.majesticreader.presentation.MainActivity"
+30-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:13:9-50
+31            android:label="@string/title_activity_main"
+31-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:14:9-52
+32            android:theme="@style/AppTheme.NoActionBar" >
+32-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:15:9-52
+33        </activity>
+34
+35        <!-- Splash Activity -->
+36        <activity
+36-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:19:5-26:16
+37            android:name="com.raywenderlich.android.majesticreader.presentation.SplashActivity"
+37-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:19:15-58
+38            android:exported="true" >
+38-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:20:9-32
+39            <intent-filter>
+39-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:21:7-25:23
+40                <action android:name="android.intent.action.MAIN" />
+40-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:22:9-60
+40-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:22:17-58
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:24:9-68
+42-->/media/gautam/3b49b35f-34c9-43b2-b197-0a83284c7b32/gautam/Documents/Gautam/Android-SDE-2/Project/MajesticReader-Clean-Architecture/clean-architecture-android-materials-1/clean-architecture-android-materials/starter/app/src/main/AndroidManifest.xml:24:19-66
+43            </intent-filter>
+44        </activity>
+45
+46        <service
+46-->[androidx.room:room-runtime:2.5.1] /home/gautam/.gradle/caches/transforms-3/25feca8c57e0d49cfa09c44f78bd5508/transformed/room-runtime-2.5.1/AndroidManifest.xml:24:9-28:63
+47            android:name="androidx.room.MultiInstanceInvalidationService"
+47-->[androidx.room:room-runtime:2.5.1] /home/gautam/.gradle/caches/transforms-3/25feca8c57e0d49cfa09c44f78bd5508/transformed/room-runtime-2.5.1/AndroidManifest.xml:25:13-74
+48            android:directBootAware="true"
+48-->[androidx.room:room-runtime:2.5.1] /home/gautam/.gradle/caches/transforms-3/25feca8c57e0d49cfa09c44f78bd5508/transformed/room-runtime-2.5.1/AndroidManifest.xml:26:13-43
+49            android:exported="false" />
+49-->[androidx.room:room-runtime:2.5.1] /home/gautam/.gradle/caches/transforms-3/25feca8c57e0d49cfa09c44f78bd5508/transformed/room-runtime-2.5.1/AndroidManifest.xml:27:13-37
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+53            android:authorities="com.raywenderlich.android.majesticreader.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] /home/gautam/.gradle/caches/transforms-3/87f2535b5e6be31a6e45bff2a6d16839/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/gautam/.gradle/caches/transforms-3/4588bb66ef86d8a02ba913e01d5d55c7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/gautam/.gradle/caches/transforms-3/4588bb66ef86d8a02ba913e01d5d55c7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/gautam/.gradle/caches/transforms-3/4588bb66ef86d8a02ba913e01d5d55c7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+61            <meta-data
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+63                android:value="androidx.startup" />
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+64        </provider>
+65
+66        <receiver
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+67            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+68            android:directBootAware="false"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+69            android:enabled="true"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+70            android:exported="true"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+71            android:permission="android.permission.DUMP" >
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+72            <intent-filter>
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+73                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+74            </intent-filter>
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+76                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+77            </intent-filter>
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+79                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+80            </intent-filter>
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+82                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gautam/.gradle/caches/transforms-3/aa5b54c3c3888f3d4ea393abedd9fb9c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+83            </intent-filter>
+84        </receiver>
+85    </application>
+86
+87</manifest>
