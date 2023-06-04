@@ -79,7 +79,8 @@ public final class DocumentDao_Impl implements DocumentDao {
   }
 
   @Override
-  public Object addDocument(final DocumentEntity document, final Continuation<? super Unit> arg1) {
+  public Object addDocument(final DocumentEntity document,
+      final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -92,12 +93,12 @@ public final class DocumentDao_Impl implements DocumentDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
   public Object removeDocument(final DocumentEntity document,
-      final Continuation<? super Unit> arg1) {
+      final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -110,11 +111,11 @@ public final class DocumentDao_Impl implements DocumentDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
-  public Object getDocuments(final Continuation<? super List<DocumentEntity>> arg0) {
+  public Object getDocuments(final Continuation<? super List<DocumentEntity>> $completion) {
     final String _sql = "SELECT * FROM document";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -159,7 +160,7 @@ public final class DocumentDao_Impl implements DocumentDao {
           _statement.release();
         }
       }
-    }, arg0);
+    }, $completion);
   }
 
   public static List<Class<?>> getRequiredConverters() {

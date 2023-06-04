@@ -30,6 +30,7 @@
 
 package com.raywenderlich.android.majesticreader.presentation.library
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,7 +39,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.raywenderlich.android.majesticreader.R
-import com.raywenderlich.android.majesticreader.Document
+import com.raywenderlich.android.majesticreader.domain.Document
 import com.raywenderlich.android.majesticreader.databinding.ItemDocumentBinding
 import com.raywenderlich.android.majesticreader.presentation.StringUtil
 
@@ -48,6 +49,8 @@ class DocumentsAdapter(
     private val glide: RequestManager,
     private val itemClickListener: (Document) -> Unit
 ) : RecyclerView.Adapter<DocumentsAdapter.ViewHolder>() {
+
+    private val TAG = "DocumentsAdapter"
 
   class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
       var binding =  ItemDocumentBinding.bind(view)
@@ -76,6 +79,7 @@ class DocumentsAdapter(
   }
 
   fun update(newDocuments: List<Document>) {
+      Log.d(TAG, "update: "+newDocuments.size)
     documents.clear()
     documents.addAll(newDocuments)
 
