@@ -32,26 +32,41 @@ package com.raywenderlich.android.majesticreader.presentation.library
 
 import android.app.Application
 import android.net.Uri
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
-import com.raywenderlich.android.majesticreader.Document
+import com.raywenderlich.android.majesticreader.domain.Document
 import com.raywenderlich.android.majesticreader.framework.Interactors
 import com.raywenderlich.android.majesticreader.framework.MajesticViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlin.math.log
 
-class LibraryViewModel(application: Application, interactors: Interactors)
-  : MajesticViewModel(application, interactors) {
+class LibraryViewModel(application: Application, interactors: Interactors) :
+    MajesticViewModel(application, interactors) {
 
-  val documents: MutableLiveData<List<Document>> = MutableLiveData()
+    private val TAG = "LibraryViewModel"
+    val documents: MutableLiveData<List<Document>> = MutableLiveData()
 
-  fun loadDocuments() {
-    // TODO start loading documents
-  }
+    fun loadDocuments() {
+        GlobalScope.launch {
+            documents.postValue(interactors.getDocuments())
+        }
+    }
 
-  fun addDocument(uri: Uri) {
-    // TODO add a new document
-    loadDocuments()
-  }
+    fun addDocument(uri: Uri) {
+        Log.d(TAG, "addDocument: 1")
+        GlobalScope.launch {
+            withContext(Dispatchers.IO) {
+                interactors.addDocument(Document(uri.toString(), "", 0, ""))
+            }
+            loadDocuments()
+        }
 
-  fun setOpenDocument(document: Document) {
-    // TODO set currently open document
-  }
+    }
+
+    fun setOpenDocument(document: Document) {
+        interactors.setOpenDocument(document)
+    }
 }
